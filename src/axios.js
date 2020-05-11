@@ -4,7 +4,7 @@ import auth from './utils/auth';
 const token = auth.getToken()
 console.log("token", token)
 const instance = axios.create({
-    baseURL: 'http://localhost:3000',
+    baseURL: 'https://resoluteai12.herokuapp.com',
     headers:  {
         Authorization: 'Bearer ' + token //the token is a variable which holds the token
     }
